@@ -1,0 +1,130 @@
+
+//card box for each todo item in the list. 
+.container{
+  margin: auto;
+  display: inline-block;
+  border: 1px solid #585859;
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #ccd1db;
+  
+}
+
+//SCSS styling for the Complete button the the Todo list.
+.complete {
+  text-align: center;
+  color: black;
+  margin-left: 0;
+  padding: 10px;
+  border-radius:500px;
+  display: inline-block;
+  width: 100%;
+}
+
+//Hover effect for the complete button in the todo list
+.complete:hover {
+  color: white;
+  font-weight: bold;
+  background-color: #89a3b9;
+}
+
+.item-complete {
+  background-color: #5cb85c;
+}
+
+
+th, td {
+  min-width: 100px;
+  min-height: 30px;
+}
+//Flex box style used for dsiaplying each todo item in a card layout format
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+//modal layout used to create a pop up box that takes in details to enter new item to the todo list.
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color:#bfe1ff;
+  margin: auto;
+  padding: 20px;
+  border: 1.5px solid rgb(68, 68, 68);
+  width: 80%;
+}
+//styling for the heading of the modal 
+.modal-heading{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+//hover effect and focus on the close button of the modal box
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+//background image for the entire page.
+body {
+  background-image: url("bg.png");
+}
+
+//add item button styling
+#list-add {
+  text-align: center;
+  background-color: #bfe1ff;
+  color: black;
+  //margin-left: 46%;
+  padding: 10px;
+  border-radius:500px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+//hover effect created for the add item button
+#list-add:hover {
+  background-color: #00559e;
+  color: white;
+}
+
+//form created to enter all the details to add to the todo list.
+form{
+  text-align: center;
+}
+
+//styling for the input fields in the form section.
+form > input{
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  border-color: white;
+  background-color: rgb(235, 235, 235);
+}
