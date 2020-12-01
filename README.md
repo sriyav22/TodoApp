@@ -1,4 +1,4 @@
-# Assignment 9
+# TodoApp
 
 ## Todo App features using REST API
 
